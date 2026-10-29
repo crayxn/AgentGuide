@@ -54,10 +54,14 @@ Agent 方向变化很快，当前更值得投入的是能落地、能验证、�
 - [Anthropic: Building effective agents](https://www.anthropic.com/engineering/building-effective-agents)
 - [OpenAI: A practical guide to building agents](https://openai.com/business/guides-and-resources/a-practical-guide-to-building-ai-agents/)
 - [上下文工程实践](../02-tech-stack/11-context-engineering-practices.md)
+ 解释下 使用Offload 方式处理上下文。我没理解的是agent怎么读取外部内容
 
 **产出物**：写一页笔记回答三个问题：
 
 1. 我的场景为什么需要 Agent，而不是普通 workflow？
+workflow是按照预先设计的执行结构推荐，当已经知道正确的处理过程的时候优先使用workflow
+agent是按照给出的目标、工具跟约束，模型根据执行的结果持续决定下一步。什么时候需要用到agent，就是目标清楚但完成路径需要边做边发现
+如果引入 Agent，至少要明确：任务目标、可用工具、执行权限、完成标准，以及时间、费用、步数和无进展退出条件。停止条件由程序执行，业务结果由证据和校验机制验收
 2. Context Engineering 和 Prompt Engineering 的区别是什么？
 3. Harness 的各层分别解决什么问题？
 
