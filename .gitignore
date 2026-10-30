@@ -35,3 +35,4 @@ __pycache__/
 # macOS Finder 目录元数据（图标位置、窗口大小、排序方式）
 # 仅对生成它的那台 Mac 有意义，且会记录目录内的文件名
 .DS_Store
+.env
